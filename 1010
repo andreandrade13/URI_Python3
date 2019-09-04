@@ -1,0 +1,16 @@
+v1 = input().split(" ")
+v2 = input().split(" ")
+
+cod1, num1, vlr1 = v1
+cod2, num2, vlr2 = v2
+
+cod1 = int(cod1)
+cod2 = int(cod2)
+num1 = int(num1)
+num2 = int(num2)
+vlr1 = float(vlr1)
+vlr2 = float(vlr2)
+
+VALOR = (num1 * vlr1) + (num2 * vlr2)
+
+print("VALOR A PAGAR = R$ {:.2f}".format(VALOR))

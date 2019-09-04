@@ -1,0 +1,9 @@
+Nome = input()
+SF = float(input())
+V = float(input())
+
+Com = (V * 0.15)
+
+TOTAL = SF + Com
+
+print("TOTAL = {:.2f}".format(TOTAL))

@@ -1,0 +1,6 @@
+
+km = input()
+
+dist = int(km) * 2
+
+print("{} minutos".format(dist))

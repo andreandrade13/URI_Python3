@@ -1,0 +1,7 @@
+consumo = 12
+horas = input()
+veloc = input()
+
+gasto = (int(horas) * int(veloc)) / 12 
+
+print("{:.6}".format(gasto))

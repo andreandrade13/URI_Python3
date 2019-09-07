@@ -1,0 +1,7 @@
+
+km = input()
+gas = input()
+
+consumo = int(km) / float(gas)
+
+print("{:.3f} km/l".format(consumo))

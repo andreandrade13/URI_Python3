@@ -1,0 +1,17 @@
+valores = input().split(" ")
+
+A, B, C = valores
+
+pi = 3.14159
+
+TRIANGULO = (float(A) * float(C)) / 2
+CIRCULO = (pi * pow(float(C), 2))
+TRAPEZIO = float(C) * (float(A) + float(B)) / 2
+QUADRADO = pow(float(B), 2)
+RETANGULO = float(A) * float(B)
+
+print('TRIANGULO: {:.3f}'.format(TRIANGULO))
+print('CIRCULO: {:.3f}'.format(CIRCULO))
+print('TRAPEZIO: {:.3f}'.format(TRAPEZIO))
+print('QUADRADO: {:.3f}'.format(QUADRADO))
+print('RETANGULO: {:.3f}'.format(RETANGULO))

@@ -1,0 +1,26 @@
+conta = input().split(" ")
+
+cod, qt = conta
+
+cod = int(cod)
+qt = int(qt)
+
+if cod == 1:
+	qt = qt * 4.00
+	print('Total: R$ %.2f'%qt)
+
+if cod == 2:
+	qt = qt * 4.50
+	print('Total: R$ %.2f'%qt)
+
+if cod == 3:
+	qt = qt * 5.00
+	print('Total: R$ %.2f'%qt)
+
+if cod == 4:
+	qt = qt * 2.00
+	print('Total: R$ %.2f'%qt)
+
+if cod == 5:
+	qt = qt * 1.50
+	print('Total: R$ %.2f'%qt)

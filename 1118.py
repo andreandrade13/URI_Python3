@@ -1,21 +1,18 @@
+x=0
+c=0
 while True:
-    soma = 0
-    qte = 0
-    while(qte < 2):
-        nota - float(input())
-        if(nota >= 0 and nota <= 10):
-            soma += nota
-            qte += 1
-        else:
-            print("nota invalida")
-    print("media = %.2f" %(soma/2))
-    
-    teste = 0
-    while True:
-        print("novo calculo (1-sim 2-nao)")
-        teste = int(input())
-        if(teste == 1 or teste == 2):
-            break
-            
-    if(teste == 2):
+  notas=float(input())
+  if notas >= 0 and notas <= 10:
+    x+=1
+    c+=notas
+    if x == 2:
+      print("media = %.2f" % (c/2))
+      novo=int(input("novo calculo (1-sim 2-nao)"))
+      if novo == 1:
+        continue
+      elif novo == 2:
         break
+      else:
+        novo=int(input("novo calculo (1-sim 2-nao)"))
+  else:
+    print("nota invalida")

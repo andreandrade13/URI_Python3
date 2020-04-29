@@ -1,0 +1,17 @@
+operador= input()
+soma = 0
+cont = 0
+
+for i in range(12):
+    for j in range(12):
+        valor = float(input())
+        if(i-j>=1 and j+i<=10):
+            soma += valor
+            cont += 1
+    if(i==5):
+        break
+            
+if(operador == 'S'):
+    print('%.1f' %soma)
+else:
+    print('%.1f' %(soma / cont))

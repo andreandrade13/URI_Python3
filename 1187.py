@@ -1,17 +1,13 @@
-operador= input()
-soma = 0
-cont = 0
+soma_ou_media = input()
+matriz = []
 
 for i in range(12):
     for j in range(12):
         valor = float(input())
-        if(i-j>=1 and j+i<=10):
-            soma += valor
-            cont += 1
-    if(i==5):
-        break
-            
-if(operador == 'S'):
-    print('%.1f' %soma)
+        if (i < 5) and (j <= 10-i) and (j > i):
+            matriz.append(valor)
+
+if soma_ou_media == "S":
+    print(("%.1f")%(sum(matriz)))
 else:
-    print('%.1f' %(soma / cont))
+    print(("%.1f")%(sum(matriz)/len(matriz)))

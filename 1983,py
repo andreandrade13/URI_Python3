@@ -1,26 +1,14 @@
-vezes = int(input())
-maiores = []
-maiores1 = []
-
-for i in range(vezes):
-    codigo, tamanho = input().split()
-    tamanho = float(tamanho)
-    
-    if tamanho >= 8:
-        maiores.append(int(codigo))
-        maiores1.append(float(tamanho))
+n = int(input())
+m = 0.0
+al = 0
+while(n > 0):
+    n -= 1
+    a, b = input().split()
+    if float(b) > m:
+        m = float(b)
+        al = int(a)
         
-cont = 0
-aux = 0
-pos = 0
-
-for x in maiores:
-    if x > aux:
-        aux = x
-        pos = x
-        
-if pos == 0:
-    print('Minimun note not reached')
-    
+if m >= 8:
+    print(al)
 else:
-    print(pos)
+    print("Minimum note not reached")
